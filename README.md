@@ -1,21 +1,17 @@
 # docker-armhf-ffmpeg
-Alpine container with ffmpeg. Tested with Raspberry PI 3.
-
-## Open Tasks
-* Push to Docker Hub
+Alpine container with ffmpeg for armhf architecture. Tested with Raspberry PI 3.
 
 ## How to get it
 
 ### Just pull the image from Docker Hub
 The easiest and fastest way to get ffmpeg is to download a prebuilt image:
 
-```docker pull torbenbrodt/armhf-ffmpeg```
+```docker pull pschmitt/armhf-ffmpeg```
 
 ### Or build your own image as follows:
 ```bash
-$ git clone https://github.com/torbenbrodt/docker-armhf-ffmpeg.git
+$ git clone https://github.com/pschmitt/docker-armhf-ffmpeg.git
 $ cd docker-armhf-ffmpeg
-$ git checkout instructions
 $ docker build -t docker-armhf-ffmpeg .
 ```
 ## How to run it
