@@ -19,7 +19,7 @@ $ docker build -t docker-armhf-ffmpeg .
 $ docker run --privileged \
       -v /dev/video0:/dev/video0 \
       -v /usr/share/openhab/webapps/webcam/1/:/tmp/ffmpeg \
-      torbenbrodt/docker-armhf-ffmpeg \
+      pschmitt/docker-armhf-ffmpeg \
       -f video4linux2 -s vga -i /dev/video0 -vframes 3 -y /tmp/ffmpeg/%01d.jpg
 ```
 
